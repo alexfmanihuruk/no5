@@ -1,0 +1,12 @@
+ersion: "2"
+
+services:
+  demo:
+    image: gcr.io/generated-mote-316806/demo:latest
+    build:
+      context: .
+      dockerfile: dockerfiles/app.docker
+    container_name: "demo"
+    ports:
+      - "80:80"
+
